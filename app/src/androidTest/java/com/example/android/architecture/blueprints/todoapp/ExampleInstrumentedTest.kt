@@ -22,4 +22,11 @@ class ExampleInstrumentedTest {
         assertEquals("com.example.android.architecture.blueprints.reactive",
             appContext.packageName)
     }
+
+    // Each test is annotated with @Test (this is a Junit annotation)
+    @Test
+    fun addition_isCorrect() {
+        assertEquals(4, 2 + 2)
+        assertEquals(3, 1 + 1) // This should fail
+    }
 }
